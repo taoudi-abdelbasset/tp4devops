@@ -28,7 +28,7 @@ COPY index.html /usr/share/nginx/html
 EXPOSE 80
 ```
 
-![alt text](image-1.png)
+![alt text](./src/resource/image-1.png)
 
 ---
 
@@ -43,7 +43,7 @@ git remote add origin https://github.com/taoudi-abdelbasset/tp4devops.git
 git push origin master
 ```
 
-![alt text](image-2.png)
+![alt text](./src/resource/image-2.png)
 
 ---
 
@@ -61,15 +61,15 @@ git push origin master
   docker run -d -p 8081:80 taoudiabdelbasset/tp4devops
   ```
 **Config**
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](./src/resource/image-3.png)
+![alt text](./src/resource/image-4.png)
 - run every minute
-![alt text](image-5.png)
+![alt text](./src/resource/image-5.png)
 - env
-![alt text](image-6.png)
+![alt text](./src/resource/image-6.png)
 - docker image build
-![alt text](image-7.png)
-![alt text](image-8.png)
+![alt text](./src/resource/image-7.png)
+![alt text](./src/resource/image-8.png)
 
 ---
 
@@ -77,9 +77,9 @@ git push origin master
 - Changed `index.html` → `git commit -m "changed index"` → `git push`  
 - **Jenkins auto-triggered** → New image → Deployed on `localhost:8081`
 
-![alt text](<Screenshot from 2025-11-12 22-39-04.png>)
-![alt text](<Screenshot from 2025-11-12 22-41-47.png>)
-![alt text](<Screenshot from 2025-11-12 22-51-21.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 22-39-04.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 22-41-47.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 22-51-21.png>)
 
 ---
 
@@ -87,7 +87,7 @@ git push origin master
 
 ### **5 Stages Pipeline**
 
-![alt text](<Screenshot from 2025-11-12 22-52-44.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 22-52-44.png>)
 
 ```groovy
 pipeline {
@@ -195,7 +195,7 @@ pipeline {
 }
 ```
 
-![alt text](<Screenshot from 2025-11-12 23-13-31.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 23-13-31.png>)
 
 ---
 
@@ -207,7 +207,7 @@ def status = sh(script: "curl -f http://localhost:8083", returnStatus: true)
 ```
 → **Test PASSED**
 
-![alt text](image-9.png)
+![alt text](./src/resource/image-9.png)
 
 ---
 
@@ -216,7 +216,7 @@ def status = sh(script: "curl -f http://localhost:8083", returnStatus: true)
 - Ran new image: `taoudiabdelbasset/tp4devops:7`  
 - App live at: **http://localhost:8082**
 
-![alt text](<Screenshot from 2025-11-12 23-19-04.png>)
+![alt text](<./src/resource/Screenshot from 2025-11-12 23-19-04.png>)
 
 ---
 
@@ -225,7 +225,7 @@ def status = sh(script: "curl -f http://localhost:8083", returnStatus: true)
 - Tag: `latest` updated  
 - All layers pushed successfully
 
-![alt text](image-10.png)
+![alt text](./src/resource/image-10.png)
 
 ---
 
