@@ -12,7 +12,7 @@
 - Accessed via `http://localhost:8080`  
 - Unlocked with initial admin password  
 
-![alt text](image.png)
+![alt text](./src/resource/image.png)
 
 ---
 
